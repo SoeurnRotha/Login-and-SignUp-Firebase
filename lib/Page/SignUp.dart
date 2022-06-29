@@ -86,7 +86,7 @@ class _SignUpState extends State<SignUp> {
         if(user == null){
           showSnackBar(context, "Sign Up false");
         }else{
-          Navigator.push(context, MaterialPageRoute(builder: (context)=> LoginPage()));
+          Navigator.push(context, MaterialPageRoute(builder: (context)=> HomePage()));
         }
       },
       child: Text("Sign Up",style: TextStyle(color: Colors.black,fontSize: 18),),
@@ -99,7 +99,7 @@ class _SignUpState extends State<SignUp> {
   get _boxSignInAccount{
     return TextButton.icon(
       onPressed: (){
-        Navigator.push(context, MaterialPageRoute(builder: (context)=> HomePage()));
+        Navigator.push(context, MaterialPageRoute(builder: (context)=> LoginPage()));
       },
       label: Text("Already account",style: TextStyle(color: Colors.white,fontSize: 16),),
       icon: Icon(Icons.account_circle,color: Colors.white,),
